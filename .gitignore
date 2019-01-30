@@ -76,3 +76,4 @@ components
 local_settings
 /node_modules/
 local_configs.py
+celerybeat-schedule.db
