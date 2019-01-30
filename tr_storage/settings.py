@@ -114,8 +114,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-from datetime import timedelta
-
 BROKER_URL = None
 CELERY_RESULT_BACKEND = None
 CELERY_ACCEPT_CONTENT = ['application/json']
