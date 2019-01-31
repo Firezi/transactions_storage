@@ -120,6 +120,12 @@ CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TASK_SERIALIZER = 'json'
 
+INFURA_ENDPOINT = None
+
+CONFIRMATION_BLOCK_COUNT = 12
+
+ACCOUNT_ADDRESS = None
+
 try:
     from .local_settings import *
 except ImportError:

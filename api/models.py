@@ -13,3 +13,7 @@ class Transaction(models.Model):
     def __str___(self):
         return "block: %s transaction: %s from: %s to: %s quantity: %s timestamp: %s input: %s" % (
             self.block_number, self.hash, self.from_address, self.to_address, self.quantity, self.timestamp, self.input_data)
+
+
+class AppInfo(models.Model):
+    last_polled_block_number = models.IntegerField()
