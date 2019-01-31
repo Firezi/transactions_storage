@@ -49,7 +49,7 @@ Ethereum transactions storage for given address
 ## API Example
 
 ```
-    localhost:8000/api/transactions/
+localhost:8000/api/transactions/
     ?fromAddress=0x03Db31B96CbB7ddEe5e887Ff71B6D22aa0a80b58&
     toAddress=0xC755525576d4e26819408ee604161cd20283d899&
     fromDate=1548898176&
