@@ -31,18 +31,22 @@ Ethereum transactions storage for given address
     
     ACCOUNT_ADDRESS
     ```
-
-4. Add starting block for synchronizing:
+4. Make migrations:
+    ```
+    $ python manage.py makemigrations
+    $ python manage.py migrate
+    ```
+5. Add starting block for synchronizing:
     ```
     >>> from api.models import AppInfo
     >>> AppInfo.objects.create(last_polled_block_number=<Starting_block_number>)
     ```
-5. Run celery beat and worker:
+6. Run celery beat and worker:
     ```
     $ celery beat -A tr_storage
     $ celery worker -A tr_storage
     ```
-6. Run application:
+7. Run application:
     ```
     $ python manage.py runserver
     ```
