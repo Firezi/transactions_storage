@@ -126,6 +126,8 @@ CONFIRMATION_BLOCK_COUNT = 12
 
 ACCOUNT_ADDRESS = None
 
+POLL_FREQUENCY_IN_SECONDS = 5
+
 try:
     from .local_settings import *
 except ImportError:
